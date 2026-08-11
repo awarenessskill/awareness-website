@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -9,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* درجات الألوان المستخرجة من الشعار */
-            --primary-color: #2e5b37;       /* الأخضر الرئسي من الشعار */
+            /* درجات الألوان مستخرجة من الشعار */
+            --primary-color: #2e5b37;       /* الأخضر الرئيسي من الشعار */
             --primary-dark: #1b3b22;        /* الأخضر الداكن */
             --accent-color: #4a7c55;         /* الأخضر الفاتح للتفاصيل */
-            --bg-light: #f4f7f4;            /* خلفية فاتحة مريحة */
+            --bg-light: #f4f7f4;            /* خلفية فاتحة */
             --text-dark: #2c3e50;
             --text-muted: #5a6b5d;
             --white: #ffffff;
@@ -53,14 +54,17 @@
             margin: 0 auto;
         }
 
-        /* تنسيق الشعار مع النص */
         .logo-container {
             display: flex;
             align-items: center;
             gap: 12px;
             text-decoration: none;
         }
-<img src="logo.jpg.jpg" alt="شعار مركز مهارة الوعي للتدريب" class="logo-img">
+
+        .logo-img {
+            height: 55px;
+            width: auto;
+            object-fit: contain;
         }
 
         .logo-text {
@@ -307,7 +311,7 @@
     <header>
         <nav class="navbar">
             <a href="#" class="logo-container">
-                <img src="logo.jpg" alt="شعار مركز مهارة الوعي للتدريب" class="logo-img">
+                <img src="logo.jpg" onerror="this.onerror=null; this.src='logo.jpg.jpg';" alt="شعار مركز مهارة الوعي للتدريب" class="logo-img">
                 <span class="logo-text">مركز مهارة الوعي للتدريب</span>
             </a>
             <ul class="nav-links">
@@ -315,7 +319,7 @@
                 <li><a href="#programs">البرامج التدريبية</a></li>
                 <li><a href="#contact">تواصل معنا</a></li>
             </ul>
-            <a href="#contact" class="btn-primary">التسجيل الفوري</a>
+            <a href="https://wa.me/966505155648" target="_blank" class="btn-primary">التسجيل الفوري</a>
         </nav>
     </header>
 
@@ -356,20 +360,20 @@
                     <p>تطوير المهارات الأربع (المحادثة، الاستماع، القراءة، الكتابة) لجميع المستويات.</p>
                 </div>
                 <div class="program-footer">
-                    <span style="font-weight: 700; color: var(--primary-color);">1 - 12 شهر</span>
-                    <a href="#contact" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.85rem;">التفاصيل</a>
+                    <span style="font-weight: 700; color: var(--primary-color);">4 - 12 أسبوع</span>
+                    <a href="https://wa.me/966505155648" target="_blank" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.85rem;">التسجيل عبر الواتساب</a>
                 </div>
             </div>
 
             <div class="program-card">
                 <div class="program-body">
                     <span class="program-tag">تطوير الأعمال</span>
-                    <h3>إدارة المشاريع الناجحة</h3>
+                    <h3>إدارة المشروع بنجاح</h3>
                     <p>دورة مكثفة تعتمد على أدلة وتطبيقات الإدارة التجارية العملية.</p>
                 </div>
                 <div class="program-footer">
                     <span style="font-weight: 700; color: var(--primary-color);">مكثف</span>
-                    <a href="#contact" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.85rem;">التفاصيل</a>
+                    <a href="https://wa.me/966505155648" target="_blank" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.85rem;">التسجيل عبر الواتساب</a>
                 </div>
             </div>
 
@@ -381,7 +385,7 @@
                 </div>
                 <div class="program-footer">
                     <span style="font-weight: 700; color: var(--primary-color);">تطبيقي</span>
-                    <a href="#contact" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.85rem;">التفاصيل</a>
+                    <a href="https://wa.me/966505155648" target="_blank" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.85rem;">التسجيل عبر الواتساب</a>
                 </div>
             </div>
         </div>
@@ -398,13 +402,13 @@
                 <ul>
                     <li><a href="#about">عن المركز</a></li>
                     <li><a href="#programs">البرامج التدريبية</a></li>
-                    <li><a href="#">سياسة التسجيل</a></li>
+                    <li><a href="https://wa.me/966505155648" target="_blank">التواصل المباشر</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>تواصل معنا</h4>
-                <p>البريد الإلكتروني: info@awarenessskill.com</p>
-                <p>المملكة العربية السعودية</p>
+                <p>الجوال / واتساب: <a href="https://wa.me/966505155648" target="_blank" style="color: #fff; text-decoration: underline;">0505155648</a></p>
+                <p>المملكة العربية السعودية - شقراء</p>
             </div>
         </div>
         <div class="copyright">
@@ -414,4 +418,3 @@
 
 </body>
 </html>
-<a href="#contact" class="btn-primary">التسجيل الفوري</a>
