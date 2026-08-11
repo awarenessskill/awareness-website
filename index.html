@@ -1,51 +1,402 @@
-مركز مهارة الوعي
-عن المركز
-البرامج التدريبية
-تواصل معنا
-التسجيل الفوري
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز مهارة الوعي للتدريب | الصفحة الرئيسية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0d47a1;
+            --secondary-color: #00897b;
+            --accent-color: #f57c00;
+            --bg-light: #f8f9fa;
+            --text-dark: #212121;
+            --text-muted: #616161;
+            --white: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --radius: 12px;
+        }
 
-تمكين المهارات.. لرسم مستقبل أفضل
-نقدم برامج تدريبية متكاملة وفق أعلى المعايير لتطوير القدرات الفردية والمؤسسية وتأهيل الكوادر لسوق العمل.
-استكشف الدورات
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tajawal', sans-serif;
+        }
 
-اعتماد رسمي
-مؤسسة معتمدة تهدف لتقديم شهادات وبرامج ذات جودة عالية.
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+        }
 
-مدربون متخصصون
-نخبة من الخبرات الأكاديمية والمهنية لتوجيهك نحو النجاح.
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-بيئة تدريب حديثة
-حقائب تدريبية متطورة تلائم احتياجات سوق العمل الحالي.
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-أبرز البرامج التدريبية
-اختر المجال الذي يناسب تطلعاتك وتطوير مهاراتك
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
 
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
 
-اللغات والتواصل
-برنامج اللغة الإنجليزية الشامل
-تطوير المهارات الأربع (المحادثة، الاستماع، القراءة، الكتابة) لجميع المستويات.
-4 - 12 أسبوع التفاصيل
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
 
-تطوير الأعمال
-إدارة المشاريع الناجحة
-دورة مكثفة تعتمد على أدلة وتطبيقات الإدارة التجارية العملية.
-مكثف التفاصيل
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
 
-الحاسب الآلي والتقنية
-المهارات الرقمية والإدارية
-تمكين المشاركين من استخدام أحدث التطبيقات المكتبية والبرامج التقنية.
-تطبيقي التفاصيل
+        .btn-primary {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 0.6rem 1.4rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
 
+        .btn-primary:hover {
+            background-color: #00695c;
+            transform: translateY(-2px);
+        }
 
-مركز مهارة الوعي للتدريب
-نسعى لإرساء معايير جديدة للتدريب الجاد والفعال لتأهيل الكوادر الفردية والمؤسسية.
+        .hero {
+            background: linear-gradient(135deg, rgba(13, 71, 161, 0.95), rgba(0, 137, 123, 0.85)), url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            color: var(--white);
+            padding: 5rem 5% 6rem;
+            text-align: center;
+        }
 
-روابط سريعة
-عن المركز
-البرامج التدريبية
-سياسة التسجيل
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-تواصل معنا
-البريد الإلكتروني: info@awarenessskill.com
-المملكة العربية السعودية
-جميع الحقوق محفوظة © 2026 مركز مهارة الوعي للتدريب
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .features {
+            max-width: 1200px;
+            margin: -3rem auto 4rem;
+            padding: 0 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .feature-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .programs {
+            max-width: 1200px;
+            margin: 0 auto 5rem;
+            padding: 0 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title p {
+            color: var(--text-muted);
+        }
+
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .program-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .program-body {
+            padding: 1.5rem;
+        }
+
+        .program-tag {
+            display: inline-block;
+            background-color: #e0f2f1;
+            color: var(--secondary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .program-card h3 {
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .program-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .program-footer {
+            padding: 1rem 1.5rem;
+            background-color: #fafafa;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 3rem 5% 1.5rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .footer-col p, .footer-col li {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            list-style: none;
+        }
+
+        .footer-col a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-col a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .features {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">مركز مهارة الوعي</a>
+            <ul class="nav-links">
+                <li><a href="#about">عن المركز</a></li>
+                <li><a href="#programs">البرامج التدريبية</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+            <a href="#contact" class="btn-primary">التسجيل الفوري</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>تمكين المهارات.. لرسم مستقبل أفضل</h1>
+            <p>نقدم برامج تدريبية متكاملة وفق أعلى المعايير لتطوير القدرات الفردية والمؤسسية وتأهيل الكوادر لسوق العمل.</p>
+            <a href="#programs" class="btn-primary" style="background-color: var(--accent-color);">استكشف الدورات</a>
+        </div>
+    </section>
+
+    <section class="features" id="about">
+        <div class="feature-card">
+            <h3>اعتماد رسمي</h3>
+            <p>مؤسسة معتمدة تهدف لتقديم شهادات وبرامج ذات جودة عالية.</p>
+        </div>
+        <div class="feature-card">
+            <h3>مدربون متخصصون</h3>
+            <p>نخبة من الخبرات الأكاديمية والمهنية لتوجيهك نحو النجاح.</p>
+        </div>
+        <div class="feature-card">
+            <h3>بيئة تدريب حديثة</h3>
+            <p>حقائب تدريبية متطورة تلائم احتياجات سوق العمل الحالي.</p>
+        </div>
+    </section>
+
+    <section class="programs" id="programs">
+        <div class="section-title">
+            <h2>أبرز البرامج التدريبية</h2>
+            <p>اختر المجال الذي يناسب تطلعاتك وتطوير مهاراتك</p>
+        </div>
+
+        <div class="program-grid">
+            <div class="program-card">
+                <div class="program-body">
+                    <span class="program-tag">اللغات والتواصل</span>
+                    <h3>برنامج اللغة الإنجليزية الشامل</h3>
+                    <p>تطوير المهارات الأربع (المحادثة، الاستماع، القراءة، الكتابة) لجميع المستويات.</p>
+                </div>
+                <div class="program-footer">
+                    <span style="font-weight: 700; color: var(--primary-color);">4 - 12 أسبوع</span>
+                    <a href="#contact" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.85rem;">التفاصيل</a>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-body">
+                    <span class="program-tag">تطوير الأعمال</span>
+                    <h3>إدارة المشاريع الناجحة</h3>
+                    <p>دورة مكثفة تعتمد على أدلة وتطبيقات الإدارة التجارية العملية.</p>
+                </div>
+                <div class="program-footer">
+                    <span style="font-weight: 700; color: var(--primary-color);">مكثف</span>
+                    <a href="#contact" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.85rem;">التفاصيل</a>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-body">
+                    <span class="program-tag">الحاسب الآلي والتقنية</span>
+                    <h3>المهارات الرقمية والإدارية</h3>
+                    <p>تمكين المشاركين من استخدام أحدث التطبيقات المكتبية والبرامج التقنية.</p>
+                </div>
+                <div class="program-footer">
+                    <span style="font-weight: 700; color: var(--primary-color);">تطبيقي</span>
+                    <a href="#contact" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.85rem;">التفاصيل</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>مركز مهارة الوعي للتدريب</h4>
+                <p>نسعى لإرساء معايير جديدة للتدريب الجاد والفعال لتأهيل الكوادر الفردية والمؤسسية.</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#about">عن المركز</a></li>
+                    <li><a href="#programs">البرامج التدريبية</a></li>
+                    <li><a href="#">سياسة التسجيل</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <p>البريد الإلكتروني: awarenessskill@gmail.com</p>
+                <p>المملكة العربية السعودية</p>
+            </div>
+        </div>
+        <div class="copyright">
+            جميع الحقوق محفوظة &copy; 2026 مركز مهارة الوعي للتدريب
+        </div>
+    </footer>
+
+</body>
+</html>
